@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+
+<script>
+function get_focus(x){
+	alert(x)
+}
+
+function off_focus(x){
+	alert()
+}
+</script>
+
+
+
+<script>
+function load_msg(){
+	alert("홈페이지에 오신것을 환영합니다.")
+}
+</script>
+
+
+
+<script>
+function event_test(){
+	confirm("정말 확인 하시겠습니까 ?");
+}
+</script>
+</head>
+<body onLoad="load_msg()"> 
+	Homepage<br> <!-- onLoad : 사이트 접속시 발생하는 이벤트 -->
+	<input type = "button" value = "확인" onclick = "event_test()">
+	<!-- onclick -->
+	<!-- event handler : event가 발생했을 때 사건를 인식하는 행위 -->
+</body>
+
+<body>
+		<form name = "test">
+		이름 : <input type = "text" name + "name" onFocus = get_focus(this) onBlur>
+		</form>
+</body>
+</html>

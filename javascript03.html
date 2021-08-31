@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script>
+		oo = confirm("현재 날씨가 무덥나요 ?"); // confirm : user에게 확인을 받는 창
+		document.write(oo);
+		
+		// function(함수){
+		// 실행할 내용들
+		// return 반환값;
+		//}
+		// function sum(a, b){
+		// return a + b;	
+		//}
+		// function hap(a, b){
+		//	c = a+b;
+		//}
+		
+		function aa(){
+			document.write("매개변수가 없는 함수 호출<br>");	
+		}
+		
+		function bb(i,  j){
+			document.write("매개변수가 있는 함수 호출 : "  + i +"," + j +"<br>" );
+		}
+		
+		function cc(a){
+			document.write(a + "에 10을 더해서 return 해주는 함수.<br>");
+			return a + 10;
+		}
+</script>
+
+</head>
+
+<body>
+<script>
+	aa();
+	bb(10, 20);
+	sum = cc(100);
+	document.write("return 값 :" + sum);
+</script>
+
+</body>
+
+</html>
